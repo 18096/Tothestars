@@ -14,7 +14,62 @@
                 <!-- Replace with absolute URL -->
                 <img src="https://raw.githubusercontent.com/yourusername/repository/branch/Tothestars/CSS/Assets/HIBBY.jpg" alt="Wanted Person">
             </div>
+            <p class="subtitle">For being the best😶‍🌫️</p><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WANTED Poster</title>
+    <link rel="stylesheet" href="CSS/styles.css"> <!-- Ensure the CSS file path is correct -->
+</head>
+<body>
+    <div class="homepage">
+        <div class="poster-frame">
+            <h1 class="title">WANTED</h1>
+            <div class="image-box">
+                <!-- Correct relative path to image -->
+                <img src="Tothestars/CSS/Assets/HIBBY.jpg" alt="Wanted Person">
+            </div>
             <p class="subtitle">For being the best😶‍🌫️</p>
+            <p class="bounty">Reward: $1,000,000</p>
+        </div>
+
+        <!-- Buttons -->
+        <button class="glow-button" onclick="navigateToDetails()">Details</button>
+        <button class="glow-button" onclick="openImagePopup()">Find Him</button>
+    </div>
+
+    <!-- Image Popup -->
+    <div class="popup-overlay" id="popupOverlay" onclick="closeImagePopup()"></div>
+    <div class="popup" id="imagePopup">
+        <!-- Correct relative path to popup image -->
+        <img src="Tothestars/CSS/Assets/DSC_3937-Enhanced-NR.jpg" alt="Popup Image">
+    </div>
+
+    <script>
+        // JavaScript functionality for the buttons
+        function navigateToDetails() {
+            const url = "details.html"; // Ensure details.html exists in your project
+            window.location.href = url;
+        }
+
+        function openImagePopup() {
+            const overlay = document.getElementById("popupOverlay");
+            const popup = document.getElementById("imagePopup");
+            overlay.style.display = "block";
+            popup.style.display = "block";
+        }
+
+        function closeImagePopup() {
+            const overlay = document.getElementById("popupOverlay");
+            const popup = document.getElementById("imagePopup");
+            overlay.style.display = "none";
+            popup.style.display = "none";
+        }
+    </script>
+</body>
+</html>
+
             <p class="bounty">Reward: $1,000,000</p>
         </div>
 
