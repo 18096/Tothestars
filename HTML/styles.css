@@ -1,0 +1,119 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Main container styling */
+.homepage {
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
+    padding: 30px;
+    border: 12px double rgb(255, 0, 0);
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.8), 0 0 15px rgba(0, 0, 0, 0.8);
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+}
+
+/* Title styling */
+.title {
+    font-size: 4rem;
+    color: rgb(255, 0, 0);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    margin: 0;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+/* Subtitle and bounty styling */
+.subtitle, .bounty {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.bounty {
+    color: yellow;
+    font-weight: bold;
+}
+
+/* Glow Button Styling */
+.glow-button {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    margin: 10px 0;
+}
+
+.glow-button:hover {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+    transform: scale(1.05);
+}
+
+/* Image Box Styling */
+.image-box {
+    width: 100%; /* Let the container scale */
+    max-width: 300px; /* Restrict the maximum width of the container */
+    margin: 0 auto; /* Center the container */
+    border: 5px solid rgba(255, 0, 0, 0.8);
+    border-radius: 10px;
+    overflow: hidden; /* Prevent content overflow */
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+}
+
+.image-box img {
+    display: block; /* Removes inline space */
+    width: 100%; /* Ensure it fills the container's width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Crop image if necessary */
+}
+
+/* Popup Overlay Styling */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+}
+
+/* Popup Content Styling */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1000;
+    max-width: 80%; /* Ensure it doesn't exceed 80% of the screen width */
+    max-height: 80%; /* Ensure it doesn't exceed 80% of the screen height */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.popup img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Ensures the full image fits within the popup */
+    border-radius: 10px;
+}

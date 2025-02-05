@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details - WANTED</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .details-container {
+            background-color: rgba(255, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 0 auto;
+            max-width: 600px;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+        }
+
+        h1, h2 {
+            color: yellow;
+        }
+
+        .description {
+            margin: 20px 0;
+        }
+
+        .image-box {
+            margin: 20px auto;
+            width: 200px;
+            height: 200px;
+            border: 5px solid yellow;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(255, 255, 0, 0.8);
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .input-box {
+            margin-top: 20px;
+        }
+
+        .input-box input[type="text"] {
+            padding: 10px;
+            font-size: 1rem;
+            width: 80%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .input-box button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: yellow;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .input-box button:hover {
+            background-color: #ff4d4d;
+            color: white;
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="details-container">
+        <h1>Last Seen Details</h1>
+        <h2>Aliases: "Hibby", "DJHibbZ"</h2>
+
+        <!-- Image Box -->
+        <div class="image-box">
+            <img src="C:\Users\Jorda\OneDrive\Desktop\YH MEDIA\CSS\Assets\DSC_5522.jpg" alt="Wanted Person">
+        </div>
+
+        <div class="description">
+            <p>Height: 5'11"</p>
+            <p>Weight: 142 lbs</p>
+            <p>Last Seen: On a Rocketship</p>
+        </div>
+
+        <div class="input-box">
+            <h3>Where did you last see him?</h3>
+            <input type="text" placeholder="Enter location here...">
+            <button>Submit</button>
+        </div>
+    </div>
+</body>
+</html>
