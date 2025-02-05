@@ -11,7 +11,8 @@
         <div class="poster-frame">
             <h1 class="title">WANTED</h1>
             <div class="image-box">
-                <img src="C:\Users\Jorda\OneDrive\Desktop\YH MEDIA\CSS\Assets\HIBBY.jpg" alt="Wanted Person">
+                <!-- Update this to a relative path -->
+                <img src="./assets/HIBBY.jpg" alt="Wanted Person">
             </div>
             <p class="subtitle">For being the best😶‍🌫️</p>
             <p class="bounty">Reward: $1,000,000</p>
@@ -25,14 +26,14 @@
     <!-- Image Popup -->
     <div class="popup-overlay" id="popupOverlay" onclick="closeImagePopup()"></div>
     <div class="popup" id="imagePopup">
-        <img src="C:\Users\Jorda\OneDrive\Desktop\YH MEDIA\CSS\Assets\DSC_3937-Enhanced-NR.jpg" alt="Popup Image">
+        <!-- Update this to a relative path -->
+        <img src="./assets/DSC_3937-Enhanced-NR.jpg" alt="Popup Image">
     </div>
 
     <script>
         // JavaScript functionality for the buttons
         function navigateToDetails() {
-            // Replace this with the actual URL for your details page
-            const url = "details.html";
+            const url = "details.html"; // Ensure details.html exists in your project
             window.location.href = url;
         }
 
